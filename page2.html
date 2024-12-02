@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Page 2</title>
+</head>
+<body>
+    <div id="custom-cursor"></div> <!-- 커스텀 커서 요소 추가 -->
+    
+    <div class="image-container">
+        <img src="back.png" alt="Van Gogh Portrait" class="background-image"> <!-- 전체 배경 이미지 -->
+        
+        <!-- 귀가 없는 부분을 클릭할 수 있도록 이미지 추가 -->
+        <div class="ear-missing-container">
+            <img src="earmissing.png" alt="Missing Ear" class="ear-missing" onclick="goToNextPage()">
+            <img src="new-image.png" alt="New Ear" class="ear-overlay"> <!-- 마우스를 올렸을 때 보이는 이미지 -->
+        </div>
+
+        <div class="eye"></div> <!-- 눈동자 -->
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
